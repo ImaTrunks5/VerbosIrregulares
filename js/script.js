@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let divTexto = document.getElementById("texto");
 
     btnJugar.addEventListener("click", ()=>{
-        fetch("../verbos.json")
+        fetch("verbos.json")
         .then(response => response.json())
         .then(verbos =>{
             const random = Math.floor(Math.random()*2);
