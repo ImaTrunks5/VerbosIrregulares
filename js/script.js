@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                     `;
                     document.getElementById("verboForm").addEventListener("submit", (e) => {
                         e.preventDefault();
-                        const resp = document.getElementById("respuesta").value.toLowerCase();
+                        const resp = document.getElementById("respuesta").value.toLowerCase().trim();
                         const correcto = verbos[randomVerboIndex].present.toLowerCase();
                         const resultado = document.getElementById("resultado")
                         if(resp === correcto){
